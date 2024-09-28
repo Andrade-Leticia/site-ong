@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+        <div class="header">
+            <img src="headerGeral.png">
+        </div>
+
+        <div class="cadastro">
+            <h1 class="title">Cadastre-se </Cadastre-se></h1>
+
+            <label for="">Nome Completo</label>
+            <div class="input">
+                <input type="text" size= "40px" placeholder="Digite seu nome completo" required/>
+            </div>
+
+            <label for="">E-mail</label>
+            <div class="input"> 
+                <input type="email" size="40px" placeholder="Digite seu e-mail" required/>
+            </div>
+
+            <label for="">Criar Senha</label>
+            <div class="input"> 
+                <input type="password" size= "40px" placeholder="Crie uma senha com 6 dígitos" required/>
+            </div>
+
+            <label for="">Confirmar Senha</label>
+            <div class="input"> 
+                <input type="password" size= "40px" placeholder="Confirme sua senha" required/>
+            </div>
+
+            <div>
+                <button type="submit" onclick="mensagem()" >Cadastrar</button>
+                <br>
+                <button onclick="redirecionarLogin()" type="submit" >Já sou cadastrado</button>
+            </div>
+
+
+        </div> 
+    <script src="./scriptCadastro.js"></script>
+</body>
+</html>

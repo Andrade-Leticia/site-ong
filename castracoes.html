@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesAgendados.css" >
+        <meta charset="UTF-8" />   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Agendadas </title>
+
+        <script> //começa o javascript
+            // Função para validar o formulário
+        function validarFormulario(event) {
+            event.preventDefault(); // Previne o envio do formulário
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+            var larTemporario = document.getElementById("lar_temporario").value;
+            var dataCastracao = document.getElementById("data_castracao").value;
+            var clinica = document.getElementById("clinica").value;
+            // Verificar se todos os campos estão preenchidos
+            if (nome === "" || idade === "" || larTemporario === "" || dataCastracao === "" || clinica === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;
+            }
+            // Se tudo estiver ok, enviar o formulário
+            document.getElementById("form-gatos").submit();
+        }
+        // Função para resetar o formulário após envio
+        function resetarFormulario() {
+            document.getElementById("form-gatos").reset();
+        }
+        function redirecionarCadastrarGato() {
+            var text = document.getElementById("textField");
+            text.style.display = "block";
+        }
+        function redirectMenu() {
+            window.location.href = "file:///Users/brebarbosa/Documents/expCriativaONG/crazyCatGang/menu.html";
+        }
+        </script> 
+
+    </head>
+
+    <body>
+        <div class="header">
+            <img src="agendadoss.png" alt="Imagem da Header">
+        </div>
+        <button onclick="redirectMenu()" type="submit" class="botaoMenu">Menu</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+
+            <h1> Gatos com Castrações Agendadas </h1>
+
+            <form action="/submit" method="post">
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                </div> 
+
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="lar_temporario">Lar Temporário que Está:</label>
+                    <input type="text" id="lar_temporario" name="lar_temporario" required><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_castracao">Data Agendada para Castração:</label>
+                    <input type="date" id="data_castracao" name="data_castracao" required><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="clinica">Nome da Clínica:</label>
+                    <input type="text" id="clinica" name="clinica" required><br><br>
+                </div>
+
+                <div>
+                    <label for="imagem">Imagem do Gato:</label>
+                    <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+                </div>
+
+                <div class="form-group">
+                    <button onclick="redirecionarCadastrarGato()" type="submit">Cadastrar</button><br><br>
+                </div>
+                <div id="textField" style="display: none;">
+                    Gato cadastrado com sucesso!
+                  </div>
+
+            </form>
+        </div>
+    </body>
+ </html>

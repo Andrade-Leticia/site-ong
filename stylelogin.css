@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    align-items: center;
+    background-color: white;
+}
+.inputEmail {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 16px;
+gap: 16px;
+
+position: absolute;
+width: 400px;
+height: 40px;
+left: 540px;
+top: 316px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+
+}
+.inputSenha {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 16px;
+gap: 16px;
+
+position: absolute;
+width: 400px;
+height: 40px;
+left: 540px;
+top: 374px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+
+}
+.texto {
+  font-family: 'Courier New', Courier, monospace;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 64px;
+height: 36px;
+left: 708px;
+top: 256px;
+
+}
+.botao {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;
+
+position: absolute;
+width: 400px;
+height: 40px;
+left: 540px;
+top: 432px;
+
+background: #FFFFFF;
+border-radius: 8px;
+transition-duration: 0.4s;
+}
+.botao:hover{
+  background-color: black;
+  color: white;
+}
+img {
+position: absolute;
+width: 1480px;
+height: 226px;
+left: 0px;
+top: 0px;
+}

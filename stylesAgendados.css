@@ -1,0 +1,145 @@
+body,html {
+    background-color: white;
+    color: white;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+}
+
+.header img{
+    position: absolute;
+    width: 1480px;
+    height: 120px;
+    left: 0px;
+    top: -1px;
+}
+
+.caixa {
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: #f9f9f9; 
+    color: rgb(3, 0, 0); 
+    border-radius: 10px; 
+    margin-top: 10px; 
+    padding: 20px;
+}
+
+.input-wide {
+    width: device;
+}
+
+.search-bar {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 1000px;
+    height: 40px; 
+    border-radius: 20px; 
+    padding: 10px; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-input {
+    display: none; 
+}
+
+.campo {
+    margin-bottom: 10px;
+    campo input[type="text"],
+    .campo select{
+        width: 100%; 
+        padding: 8px;
+        box-sizing: border-box; 
+    }
+    .campo input[type="text"]:focus::placeholder{
+        color: transparent; 
+    }
+}
+
+.nav-tabs {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; 
+}
+
+.tab {
+    color: rgb(11, 0, 0); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border-radius: 5px; 
+}
+
+.tab:focus {
+    outline: none; 
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cadastrar{
+    border:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imagem{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+h1{
+    text-align: center;
+    color: rgb(3,0,0);
+    margin-top: 20px;
+}
+.botaoMenu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 91px;
+    height: 52px;
+    left: 114px;
+    top: 36px;
+
+    font-size: 20px;
+    color: white;
+    background: #000000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+.botaoMenu:hover{
+    background-color: white;
+    color: black;
+}

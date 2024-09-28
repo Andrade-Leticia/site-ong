@@ -1,0 +1,17 @@
+.header {
+    position: absolute;
+    width: 1480px;
+    height: 120px;
+    left: 0px;
+    top: -1px;
+}
+body{
+    align-items: center;
+    background-color: white;
+}
+.botaoBackground{
+    position: absolute;
+    width: 436px;
+    height: 56px;
+
+}
